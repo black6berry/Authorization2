@@ -1,0 +1,85 @@
+﻿<Window x:Class="Authorization.Windows.Admin.AddUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Authorization.Windows.Admin"
+        mc:Ignorable="d"
+        Title="Добавить пользователя" 
+        Height="500" 
+        Width="400"
+        MinHeight="250"
+        MinWidth="300"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel>
+            <GroupBox 
+                Name="GrbxName" 
+                Header="Name"  
+                Width="270" 
+                Margin="0 10 0 0">
+                <TextBox 
+                    Name="TxbNameuser"
+                    Height="25"/>
+            </GroupBox>
+            <GroupBox 
+                Name="GrbxSurname" 
+                Header="Surname"
+                Width="270" 
+                Margin="0 10 0 0">
+                <TextBox 
+                    Name="TxbSurname"
+                    Height="25"/>
+            </GroupBox>
+            <GroupBox 
+                Name="GrbxPatronymic" 
+                Header="Patronomic" 
+                Width="270" 
+                Margin="0 10 0 0">
+                <TextBox 
+                    Name="TxbPatronomic"
+                    Height="25"
+                    />
+            </GroupBox>
+            <ComboBox Name="CmbxRole" Width="270" Margin="0 10 0 0"/>
+            <GroupBox 
+                Name="GrbxLogin" 
+                Header="Login"  
+                Width="270" 
+                Margin="0 10 0 0">
+                <TextBox 
+                    Name="TxbLogin"
+                    Height="25"
+                 />
+            </GroupBox>
+
+            <GroupBox 
+                Name="GrbxPassword" 
+                Header="Пароль"
+                Width="270"
+                Margin="0 10 0 0">
+                <TextBox 
+                    Name="TxbPassword"
+                    Height="25"
+                    />
+            </GroupBox>
+            <GroupBox 
+                Name="GrbxPasswordRepeat" 
+                Header="Повторите пароль" 
+                Width="270"
+                Margin="0 10 0 0">
+                <TextBox 
+                    Name="TxbPasswordRepeat"
+                    Height="25"
+                    />
+            </GroupBox>
+            <Button 
+                Name="BtnAddUser" 
+                Content="Добавить пользователя"
+                Width="200"
+                Height="30"
+                Margin="0 30 0 0"
+                Click="BtnAddUser_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9187fc343a9f4e288b22fe011ad7c27c" Name="Diagram1">
+        <EntityTypeShape EntityType="CRUDdbModel.Order" Width="1.5" PointX="8" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRUDdbModel.Role" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRUDdbModel.Rule" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRUDdbModel.RuleRole" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRUDdbModel.Storage" Width="1.5" PointX="5.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRUDdbModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRUDdbModel.User" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <AssociationConnector Association="CRUDdbModel.FK_Order_Storage" ManuallyRouted="false" />
+        <AssociationConnector Association="CRUDdbModel.FK_RuleRole_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="CRUDdbModel.FK_User_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="CRUDdbModel.FK_RuleRole_Rule" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
